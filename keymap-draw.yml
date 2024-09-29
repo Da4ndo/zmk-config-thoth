@@ -125,7 +125,7 @@ layers:
   - C_BRI_UP
   - C_BRI_DN
   - ''
-  - K_MUTE
+  - C_MUTE_MIC
   - C_VOL_DN
   - BT_CLR
   - '&mmv MOVE_LEFT'
