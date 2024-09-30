@@ -67,14 +67,14 @@
 
         raise_layer {
             // -----------------------------------------------------------------------------------------
-            // | F1 | F2 | F3 | F4 | F5 |   |    |    |    |    |    |
-            // | F6 | F7 | F8 | F9 | F10|   |    |    | UP |    |    |
+            // | F1 | F2 | F3 | F4 | F5 |   |    |    |    |    | DEL|
+            // | F6 | F7 | F8 | F9 | F10|   |    |    | UP |    |CAPS|
             // | F11| F12|    |    |    |   |    | LFT| DWN| RGT|    |
             //             | GUI|ADJT| SPC|   | ENT|    | TAB|
             display-name = "Raise";
             bindings = <
-                &kp F1  &kp F2  &kp F3     &kp F4        &kp F5     &none  &none     &none     &none      &none
-                &kp F6  &kp F7  &kp F8     &kp F9        &kp F10    &none  &none     &kp UP    &none      &none
+                &kp F1  &kp F2  &kp F3     &kp F4        &kp F5     &none  &none     &none     &none     &kp DEL 
+                &kp F6  &kp F7  &kp F8     &kp F9        &kp F10    &none  &none     &kp UP    &none     &kp CAPS
                 &kp F11 &kp F12 &none      &none         &none      &none  &kp LEFT  &kp DOWN  &kp RIGHT  &none
                                 &kp LGUI   &tog ADJUST   &kp SPACE  AS(RET) &none    &kp TAB
             >;
@@ -95,6 +95,6 @@
             >;
         };
 
-        //update commented art based on bindings, do not remove shifted version of keys
+        
     };
 };
