@@ -83,13 +83,13 @@
         adjust_layer {
             // -----------------------------------------------------------------------------------------
             // |PREV|PLAY|NEXT|MUTE|VOL+|   |     |     |     |     |     |
-            // |BRI+|BRI-|    |MICM|VOL-|   |BTCLR|LCLK | MUP |RCLK |SCUP |
+            // |BRI+|BRI-|    |    |VOL-|   |BTCLR|LCLK | MUP |RCLK |SCUP |
             // | BT0| BT1| BT2| BT3| BT4|   |     |MLEFT|MDOWN|MRGHT|SCDN |
             //             | GUI|BASE| SPC|   | ENT|     | TAB |
             display-name = "Adjust";
             bindings = <
                 &kp C_PREV    &kp C_PP      &kp C_NEXT    &kp C_MUTE    &kp C_VOL_UP    &none       &none           &none           &none           &none
-                &kp C_BRI_UP  &kp C_BRI_DN  &none         &kp C_MUTE_MIC    &kp C_VOL_DN    &bt BT_CLR  &mkp LCLK       &mmv MOVE_UP    &mkp RCLK       &mwh SCROLL_UP
+                &kp C_BRI_UP  &kp C_BRI_DN  &none         &none    &kp C_VOL_DN    &bt BT_CLR  &mkp LCLK       &mmv MOVE_UP    &mkp RCLK       &mwh SCROLL_UP
                 &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &none       &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT &mwh SCROLL_DOWN
                                             &kp LGUI      &to DEFAULT   &kp SPACE       &kp RET     &none           &kp TAB
             >;
