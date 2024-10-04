@@ -128,20 +128,20 @@ layers:
   - ''
   - VOL DN
   - BT CLR
-  - '&mkp LCLK'
-  - '&mmv MOVE_UP'
-  - '&mkp RCLK'
-  - '&mwh SCROLL_UP'
+  - ''
+  - ''
+  - ''
+  - ''
   - {t: BT, h: '0'}
   - {t: BT, h: '1'}
   - {t: BT, h: '2'}
   - {t: BT, h: '3'}
   - {t: BT, h: '4'}
   - ''
-  - '&mmv MOVE_LEFT'
-  - '&mmv MOVE_DOWN'
-  - '&mmv MOVE_RIGHT'
-  - '&mwh SCROLL_DOWN'
+  - ''
+  - ''
+  - ''
+  - ''
   - LGUI
   - {t: Base, h: toggle}
   - SPACE
