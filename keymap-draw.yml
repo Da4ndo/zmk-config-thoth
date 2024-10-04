@@ -45,7 +45,7 @@ layers:
   - {t: '5', h: '%'}
   - ^
   - '&'
-  - KP_MULTIPLY
+  - KP MULTIPLY
   - {t: '-', h: '_'}
   - {t: '=', h: '+'}
   - '6'
@@ -66,8 +66,8 @@ layers:
   - )
   - {t: '`', h: '~'}
   - {t: ',', h: '<'}
-  - {t: /, h: '?'}
-  - {t: \, h: '|'}
+  - {t: '/', h: '?'}
+  - {t: '\', h: '|'}
   - LGUI
   - {type: held}
   - SPACE
@@ -80,11 +80,11 @@ layers:
   - F3
   - F4
   - F5
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - CAPS
+  - PRINTSCREEN
+  - HOME
+  - END
+  - DEL
   - F6
   - F7
   - F8
@@ -94,7 +94,7 @@ layers:
   - ''
   - UP
   - ''
-  - ''
+  - PG UP
   - F11
   - F12
   - ''
@@ -104,7 +104,7 @@ layers:
   - LEFT
   - DOWN
   - RIGHT
-  - ''
+  - PG DN
   - LGUI
   - {t: Adjust, h: toggle}
   - SPACE
@@ -112,38 +112,38 @@ layers:
   - {type: held}
   - TAB
   Adjust:
-  - C_PREV
-  - C_PP
-  - C_NEXT
-  - C_MUTE
-  - C_VOL_UP
+  - PREV
+  - PP
+  - NEXT
+  - MUTE
+  - VOL UP
   - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - BRI UP
+  - BRI DN
+  - ''
+  - ''
+  - VOL DN
+  - BT CLR
   - '&mkp LCLK'
   - '&mmv MOVE_UP'
   - '&mkp RCLK'
   - '&mwh SCROLL_UP'
-  - C_BRI_UP
-  - C_BRI_DN
+  - {t: BT, h: '0'}
+  - {t: BT, h: '1'}
+  - {t: BT, h: '2'}
+  - {t: BT, h: '3'}
+  - {t: BT, h: '4'}
   - ''
-  - C_MUTE_MIC
-  - C_VOL_DN
-  - BT_CLR
   - '&mmv MOVE_LEFT'
   - '&mmv MOVE_DOWN'
   - '&mmv MOVE_RIGHT'
   - '&mwh SCROLL_DOWN'
-  - {t: BT SEL 0, h: BT_SEL 0}
-  - {t: BT SEL 1, h: BT_SEL 1}
-  - {t: BT SEL 2, h: BT_SEL 2}
-  - {t: BT SEL 3, h: BT_SEL 3}
-  - {t: BT SEL 4, h: BT_SEL 4}
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
   - LGUI
-  - {t: Base, h: to DEFAULT}
+  - {t: Base, h: toggle}
   - SPACE
   - RET
   - ''

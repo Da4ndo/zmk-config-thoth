@@ -52,10 +52,10 @@
 
         lower_layer {
             // -----------------------------------------------------------------------------------------
-            // | 1! | 2@ | 3# | 4$ | 5% |   |  ^  |  &  |  *  |  -_ |  =+ |
-            // | 6  | 7  | 8  | 9  | 0  |   |  (  |  ;: |  `~ |  [{ |  ]} |
-            // |    |    |    |    |    |   |  )  |  `~ |  ,< |  /? |  \| |
-            //             | GUI |     | SPC |   | ENT | ESC | TAB |
+            // |  1!  |  2@  |  3#  |  4$  |  5%  |   |  ^  |  &  |  *  |  -_ |  =+ |
+            // |  6   |  7   |  8   |  9   |  0   |   |  (  |  ;: |  `~ |  [{ |  ]} |
+            // |      |      |      |      |      |   |  )  |  `~ |  ,< |  /? |  \| |
+            //                | GUI |      | SPC  |   | ENT | ESC | TAB |
             display-name = "Lower";
             bindings = <
                 AS(N1)  AS(N2)  AS(N3)  AS(N4)  AS(N5)    &kp CARET  &kp AMPS  &kp KP_MULTIPLY  AS(MINUS)  AS(EQUAL)
@@ -67,29 +67,29 @@
 
         raise_layer {
             // -----------------------------------------------------------------------------------------
-            // | F1 | F2 | F3 | F4 | F5 |   |    |    |    |    | DEL|
-            // | F6 | F7 | F8 | F9 | F10|   |    |    | UP |    |CAPS|
-            // | F11| F12|    |    |    |   |    | LFT| DWN| RGT|    |
-            //             | GUI|ADJT| SPC|   | ENT|    | TAB|
+            // |  F1  |  F2  |  F3  |  F4  |  F5  |   | CAPS | PRNT | HOME | END  | DEL  |
+            // |  F6  |  F7  |  F8  |  F9  | F10  |   |      |      |  UP  |      | PGUP |
+            // | F11  | F12  |      |      |      |   |      | LEFT | DOWN | RIGHT| PGDN |
+            //                | GUI | ADJT | SPC  |   | ENT  |      | TAB  |
             display-name = "Raise";
             bindings = <
-                &kp F1  &kp F2  &kp F3     &kp F4        &kp F5     &none  &none     &none     &none     &kp DEL 
-                &kp F6  &kp F7  &kp F8     &kp F9        &kp F10    &none  &none     &kp UP    &none     &kp CAPS
-                &kp F11 &kp F12 &none      &none         &none      &none  &kp LEFT  &kp DOWN  &kp RIGHT  &none
-                                &kp LGUI   &tog ADJUST   &kp SPACE  AS(RET) &none    &kp TAB
+                &kp F1  &kp F2  &kp F3  &kp F4  &kp F5     &kp CAPS  &kp PRINTSCREEN  &kp HOME  &kp END   &kp DEL
+                &kp F6  &kp F7  &kp F8  &kp F9  &kp F10    &none     &none            &kp UP    &none     &kp PG_UP
+                &kp F11 &kp F12 &none   &none   &none      &none     &kp LEFT         &kp DOWN  &kp RIGHT &kp PG_DN
+                               &kp LGUI &tog ADJUST &kp SPACE   AS(RET)   &none     &kp TAB
             >;
         };
         
         adjust_layer {
             // -----------------------------------------------------------------------------------------
-            // |PREV|PLAY|NEXT|MUTE|VOL+|   |     |     |     |     |     |
-            // |BRI+|BRI-|    |    |VOL-|   |BTCLR|LCLK | MUP |RCLK |SCUP |
-            // | BT0| BT1| BT2| BT3| BT4|   |     |MLEFT|MDOWN|MRGHT|SCDN |
-            //             | GUI|BASE| SPC|   | ENT|     | TAB |
+            // | PREV | PLAY | NEXT | MUTE | VOL+ |   |     |     |     |     |     |
+            // | BRI+ | BRI- |      |      | VOL- |   |BTCLR| LCLK| MUP | RCLK| SCUP|
+            // | BT0  | BT1  | BT2  | BT3  | BT4  |   |     |MLEFT|MDOWN|MRGHT| SCDN|
+            //                | GUI | BASE | SPC  |   | ENT |     | TAB |
             display-name = "Adjust";
             bindings = <
                 &kp C_PREV    &kp C_PP      &kp C_NEXT    &kp C_MUTE    &kp C_VOL_UP    &none       &none           &none           &none           &none
-                &kp C_BRI_UP  &kp C_BRI_DN  &none         &none    &kp C_VOL_DN    &bt BT_CLR  &mkp LCLK       &mmv MOVE_UP    &mkp RCLK       &mwh SCROLL_UP
+                &kp C_BRI_UP  &kp C_BRI_DN  &none         &none         &kp C_VOL_DN    &bt BT_CLR  &mkp LCLK       &mmv MOVE_UP    &mkp RCLK       &mwh SCROLL_UP
                 &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &none       &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT &mwh SCROLL_DOWN
                                             &kp LGUI      &to DEFAULT   &kp SPACE       &kp RET     &none           &kp TAB
             >;
