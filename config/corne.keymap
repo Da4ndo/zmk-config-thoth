@@ -49,33 +49,34 @@
             >;
         };
 
+
         lower_layer {
             // -----------------------------------------------------------------------------------------
-            // |  1!  |  2@  |  3#  |  4$  |  5%  |   |  ^  |  &  |  *  |  -_ |  =+ |
-            // |  6   |  7   |  8   |  9   |  0   |   |  (  |  ;: |  `~ |  [{ |  ]} |
-            // |      |      |      |      |      |   |  )  |  `~ |  ,< |  /? |  \| |
+            // |  F1  |  F2  |  F3  |  F4  |  F5  |   |  ^  |  &  |  *  |  -_ |  =+ |
+            // |  F6  |  F7  |  F8  |  F9  | F10  |   |  (  |  ;: |  `~ |  [{ |  ]} |
+            // | F11  | F12  | CTRL | SHFT | ALT  |   |  )  |  `~ |  ,< |  /? |  \| |                         
             //                | GUI |      | SPC  |   | ENT | ESC | TAB |
             display-name = "Lower";
             bindings = <
-                AS(N1)  AS(N2)  AS(N3)  AS(N4)  AS(N5)    &kp CARET  &kp AMPS  &kp KP_MULTIPLY  AS(MINUS)  AS(EQUAL)
-                &kp N6  &kp N7  &kp N8  &kp N9  &kp N0    &kp LPAR   AS(COLON) AS(GRAVE)        AS(LBKT)   AS(RBKT)
-                &none   &none   &none   &none   &none     &kp RPAR   AS(GRAVE) AS(COMMA)        AS(FSLH)   AS(BSLH)
-                                &kp LGUI &none  &kp SPACE AS(RET)    &kp ESC   &kp TAB
+                &kp F1   &kp F2   &kp F3   &kp F4     &kp F5      &kp CARET  &kp AMPS  &kp KP_MULTIPLY  AS(MINUS)  AS(EQUAL)
+                &kp F6   &kp F7   &kp F8   &kp F9     &kp F10     &kp LPAR   AS(SEMICOLON) AS(GRAVE)        AS(LBKT)   AS(RBKT)
+                &kp F11  &kp F12  &kp LCTL &kp LSHIFT &kp LALT    &kp RPAR   AS(GRAVE) AS(COMMA)        AS(FSLH)   AS(BSLH)
+                                  &kp LGUI &none      &kp SPACE   AS(RET)    &kp ESC   &kp TAB
             >;
         };
-
+    
         raise_layer {
             // -----------------------------------------------------------------------------------------
-            // |  F1  |  F2  |  F3  |  F4  |  F5  |   | CAPS | PRNT | HOME | END  | DEL  |
-            // |  F6  |  F7  |  F8  |  F9  | F10  |   |      |      |  UP  |      | PGUP |
-            // | F11  | F12  |      |      |      |   |      | LEFT | DOWN | RIGHT| PGDN |
+            // |  1!  |  2@  |  3#  |  4$  |  5%  |   | CAPS | PRNT | HOME | END  | DEL  |
+            // |  6   |  7   |  8   |  9   |  0   |   |      | LEFT |  UP  | RIGHT| PGUP |
+            // |      |      | CTRL | SHFT | ALT  |   |      |      | DOWN |      | PGDN |
             //                | GUI | ADJT | SPC  |   | ENT  |      | TAB  |
             display-name = "Raise";
             bindings = <
-                &kp F1  &kp F2  &kp F3  &kp F4  &kp F5     &kp CAPS  &kp PRINTSCREEN  &kp HOME  &kp END   &kp DEL
-                &kp F6  &kp F7  &kp F8  &kp F9  &kp F10    &none     &none            &kp UP    &none     &kp PG_UP
-                &kp F11 &kp F12 &none   &none   &none      &none     &kp LEFT         &kp DOWN  &kp RIGHT &kp PG_DN
-                               &kp LGUI &tog ADJUST &kp SPACE   AS(RET)   &none     &kp TAB
+                AS(N1)    AS(N2)    AS(N3)    AS(N4)    AS(N5)      &kp CAPS  &kp PRINTSCREEN  &kp HOME  &kp END    &kp DEL
+                &kp N6    &kp N7    &kp N8    &kp N9    &kp N0      &none     &kp LEFT         &kp UP    &kp RIGHT      &kp PG_UP
+                &none     &none     &kp LCTL  &kp LSHIFT &kp LALT   &none     &none            &kp DOWN  &none  &kp PG_DN
+                                    &kp LGUI  &tog ADJUST &kp SPACE AS(RET)   &none            &kp TAB
             >;
         };
         
@@ -88,7 +89,7 @@
             display-name = "Adjust";
             bindings = <
                 &kp C_PREV    &kp C_PP      &kp C_NEXT    &kp C_MUTE    &kp C_VOL_UP    &none       &none           &none           &none           &none
-                &kp C_BRI_UP  &kp C_BRI_DN  &none         &none         &kp C_VOL_DN    &bt BT_CLR  &none          &none           &none         &none
+                &kp C_BRI_UP  &kp C_BRI_DN  &none         &none         &kp C_VOL_DN    &bt BT_CLR  &none           &none           &none           &none
                 &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &none       &none           &none           &none           &none
                                             &kp LGUI      &to DEFAULT   &kp SPACE       &kp RET     &none           &kp TAB
             >;
